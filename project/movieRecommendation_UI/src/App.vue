@@ -13,8 +13,7 @@
 			TabBar
 		},
 		created() {
-			document.title = "----";
-
+			document.title = "----"
 			//在页面加载时读取sessionStorage里的状态信息
 			if (sessionStorage.getItem("store")) {
 				this.$store.replaceState(Object.assign({}, this.$store.state, JSON.parse(sessionStorage.getItem("store"))))
@@ -69,7 +68,7 @@
 	.lay-all {
 		width: 100%;
 		height: 100%;
-		position: 'fixed';
+		position: fixed;
 		top: 0;
 		left: 0;
 		bottom: 0;
